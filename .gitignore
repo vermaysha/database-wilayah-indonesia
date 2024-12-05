@@ -175,3 +175,4 @@ dist
 .DS_Store
 *.sqlite
 *.sqlite*
+db/*.sql
