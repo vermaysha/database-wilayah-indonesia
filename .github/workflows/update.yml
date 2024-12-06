@@ -1,0 +1,38 @@
+name: Run Index and Push Changes
+
+on:
+  schedule:
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+
+jobs:
+  run-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Run index.ts with Bun
+        run: |
+          bun install
+          bun run index.ts
+
+      - name: Check for changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git add .
+            git commit -m "chore: update $(date +%s)"
+          fi
+
+      - name: Push changes
+        if: success() && steps.check-for-changes.outputs.changes
+        run: |
+          git push origin master
