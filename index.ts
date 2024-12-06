@@ -1,11 +1,15 @@
 import { Database } from "bun:sqlite";
-import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import {
   chunkArray,
+  exportTablesToCSV,
   generateInsertQuery,
   getKodePos,
   getWilayah,
 } from "./utils";
+
+rmSync("./db", { recursive: true, force: true });
+mkdirSync("./db", { recursive: true });
 
 const wilayahSql = await getWilayah();
 const wilayahDB = new Database(":memory:");
@@ -14,7 +18,7 @@ const kodePosSql = await getKodePos();
 const kodePosDB = new Database(":memory:");
 
 const table = readFileSync("./sql/table.sql", "utf-8");
-let dbSql = "";
+// let dbSql = "";
 
 wilayahDB.run(wilayahSql);
 kodePosDB.run(kodePosSql);
@@ -87,11 +91,11 @@ db.run(
     kabupaten
   )
 );
-dbSql += `${generateInsertQuery(
-  "kabupaten",
-  ["kode_kabupaten", "nama_kabupaten"],
-  kabupaten
-)}\n\n`;
+// dbSql += `${generateInsertQuery(
+//   "kabupaten",
+//   ["kode_kabupaten", "nama_kabupaten"],
+//   kabupaten
+// )}\n\n`;
 
 console.log("Update data kecamatan");
 for (const item of chunkArray(kecamatan, 100)) {
@@ -101,7 +105,7 @@ for (const item of chunkArray(kecamatan, 100)) {
     item
   );
   db.run(sql);
-  dbSql += `${sql}\n\n`;
+  // dbSql += `${sql}\n\n`;
 }
 
 console.log("Update data kelurahan");
@@ -112,7 +116,7 @@ for (const item of chunkArray(kelurahan, 500)) {
     item
   );
   db.run(sql);
-  dbSql += `${sql}\n\n`;
+  // dbSql += `${sql}\n\n`;
 }
 
 console.log("Update data desa");
@@ -131,10 +135,12 @@ for (const item of chunkArray(desa, 1000)) {
   );
 
   db.run(sql);
-  dbSql += `${sql}\n\n`;
+  // dbSql += `${sql}\n\n`;
 }
 
-writeFileSync("./db/wilayah.sql", dbSql);
+writeFileSync('./db/wilayah.schema-sqlite.sql', readFileSync('./sql/table.sql', 'utf-8'));
+writeFileSync('./db/wilayah.schema-general.sql', readFileSync('./sql/table.general.sql', 'utf-8'));
+exportTablesToCSV('./db/wilayah.sqlite', './db');
 
 console.log(
   "Selesai, data dapat dilihat pada file berikut ./db/wilayah.sqlite"
