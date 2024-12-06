@@ -14,9 +14,17 @@ SELECT
         instr(
             substr(kode, instr(kode, '.') + 1),
             '.'
-        ) + 2
+        ) -1
     ) as part3,
+    substr(
+        kode,
+        instr(kode, '.') + 7,
+        instr(
+            substr(kode, instr(kode, '.') + 1),
+            '.'
+        ) + 2
+    ) as part4,
     nama
 FROM wilayah
 WHERE
-    LENGTH(kode) - LENGTH(REPLACE(kode, '.', '')) = 2;
+    LENGTH(kode) - LENGTH(REPLACE(kode, '.', '')) = 3;

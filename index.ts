@@ -33,8 +33,8 @@ for (const el of kodePosDB
 
 db.run(table);
 
-const kabupaten = wilayahDB
-  .query(readFileSync("./sql/kabupaten.sql", "utf-8"))
+const provinsi = wilayahDB
+  .query(readFileSync("./sql/provinsi.sql", "utf-8"))
   .all()
   .map((val) => Object.values(val as object))
   .map((val) => {
@@ -52,8 +52,8 @@ const kabupaten = wilayahDB
     return val;
   });
 
-const kecamatan = wilayahDB
-  .query(readFileSync("./sql/kecamatan.sql", "utf-8"))
+const kabupaten = wilayahDB
+  .query(readFileSync("./sql/kabupaten.sql", "utf-8"))
   .all()
   .map((val) => Object.values(val as object))
   .map((val) => {
@@ -67,13 +67,13 @@ const kecamatan = wilayahDB
     return val;
   });
 
-const kelurahan = wilayahDB
-  .query(readFileSync("./sql/kelurahan.sql", "utf-8"))
+const kecamatan = wilayahDB
+  .query(readFileSync("./sql/kecamatan.sql", "utf-8"))
   .all()
   .map((val) => Object.values(val as object));
 
-const desa = wilayahDB
-  .query(readFileSync("./sql/desa.sql", "utf-8"))
+const kelurahan = wilayahDB
+  .query(readFileSync("./sql/kelurahan.sql", "utf-8"))
   .all()
   .map((val) => Object.values(val as object))
   .map((val) => {
@@ -83,25 +83,36 @@ const desa = wilayahDB
     return val;
   });
 
-console.log("Update data kabupaten");
+console.log("Update data provinsi");
 db.run(
   generateInsertQuery(
-    "kabupaten",
-    ["kode_kabupaten", "nama_kabupaten"],
-    kabupaten
+    "provinsi",
+    ["kode_provinsi", "nama_provinsi"],
+    provinsi
   )
 );
 // dbSql += `${generateInsertQuery(
 //   "kabupaten",
-//   ["kode_kabupaten", "nama_kabupaten"],
+//   ["kode_provinsi", "nama_provinsi"],
 //   kabupaten
 // )}\n\n`;
 
+console.log("Update data kabupaten");
+for (const item of chunkArray(kabupaten, 100)) {
+  const sql = generateInsertQuery(
+    "kabupaten",
+    ["kode_provinsi", "kode_kabupaten", "nama_kabupaten"],
+    item
+  );
+  db.run(sql);
+  // dbSql += `${sql}\n\n`;
+}
+
 console.log("Update data kecamatan");
-for (const item of chunkArray(kecamatan, 100)) {
+for (const item of chunkArray(kecamatan, 500)) {
   const sql = generateInsertQuery(
     "kecamatan",
-    ["kode_kabupaten", "kode_kecamatan", "nama_kecamatan"],
+    ["kode_provinsi", "kode_kabupaten", "kode_kecamatan", "nama_kecamatan"],
     item
   );
   db.run(sql);
@@ -109,26 +120,15 @@ for (const item of chunkArray(kecamatan, 100)) {
 }
 
 console.log("Update data kelurahan");
-for (const item of chunkArray(kelurahan, 500)) {
+for (const item of chunkArray(kelurahan, 1000)) {
   const sql = generateInsertQuery(
     "kelurahan",
-    ["kode_kabupaten", "kode_kecamatan", "kode_kelurahan", "nama_kelurahan"],
-    item
-  );
-  db.run(sql);
-  // dbSql += `${sql}\n\n`;
-}
-
-console.log("Update data desa");
-for (const item of chunkArray(desa, 1000)) {
-  const sql = generateInsertQuery(
-    "desa",
     [
+      "kode_provinsi",
       "kode_kabupaten",
       "kode_kecamatan",
       "kode_kelurahan",
-      "kode_desa",
-      "nama_desa",
+      "nama_kelurahan",
       "kode_pos",
     ],
     item
