@@ -1,4 +1,4 @@
-name: Run Index and Push Changes
+name: Update Database Wilayah Indonesia
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  run-and-commit:
+  upadate-database:
     runs-on: ubuntu-latest
 
     services:
@@ -16,10 +16,10 @@ jobs:
           MYSQL_ROOT_PASSWORD: root_password
           MYSQL_DATABASE: 'wilayah'
           MYSQL_USER: 'wilayah'
-          MYSQL_PASSWORD: 'wilayaah'
+          MYSQL_PASSWORD: 'wilayah'
         ports:
           - "3306:3306"
-        options: >
+        options: >-
           --health-cmd="mariadb-admin ping -h localhost"
           --health-interval=10s
           --health-timeout=5s
@@ -39,7 +39,7 @@ jobs:
           MYSQL_ROOT_PASSWORD: root_password
           MYSQL_DATABASE: 'wilayah'
           MYSQL_USER: 'wilayah'
-          MYSQL_PASSWORD: 'wilayaah'
+          MYSQL_PASSWORD: 'wilayah'
         run: |
           bun install
           bun run src/index.ts
