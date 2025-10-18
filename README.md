@@ -16,7 +16,7 @@ Pastikan sudah terinstall [Bun](https://bun.sh/docs/installation). Kemudian jala
 
 ```bash
 bun install
-bun run index.ts
+bun run .
 ```
 
 Maka akan terbentuk file basisdata dengan nama `wilayah.sqlite` di direktori `./db`.
