@@ -48,11 +48,19 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
+          # Cek apakah ada file yang berubah
           if [ -n "$(git status --porcelain)" ]; then
+            echo "Ada perubahan, melakukan commit..."
             git config --global user.name "github-actions[bot]"
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
             git add .
-            git commit -m "chore: update $(date +%s)"
+            git commit -m "chore: update database wilayah $(date +%F)"
+            # 2. Atur output "changes_exist" menjadi "true"
+            echo "changes_exist=true" >> $GITHUB_OUTPUT
+          else
+            echo "Tidak ada perubahan."
+            # Atur output menjadi "false" (opsional, tapi bagus untuk kejelasan)
+            echo "changes_exist=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Push changes
