@@ -40,9 +40,10 @@ jobs:
           MYSQL_DATABASE: 'wilayah'
           MYSQL_USER: 'wilayah'
           MYSQL_PASSWORD: 'wilayah'
+          MYSQL_URL: 'mysql://wilayah:wilayah@localhost:3306/wilayah'
         run: |
           bun install
-          MYSQL_DATABASE=wilayah MYSQL_USER=wilayah MYSQL_PASSWORD=wilayah bun run src/index.ts
+          MYSQL_URL=mysql://wilayah:wilayah@localhost:3306/wilayah bun run src/index.ts
 
       - name: Check for changes
         run: |
