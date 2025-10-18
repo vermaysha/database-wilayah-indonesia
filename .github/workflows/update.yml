@@ -42,7 +42,7 @@ jobs:
           MYSQL_PASSWORD: 'wilayah'
         run: |
           bun install
-          bun run src/index.ts
+          MYSQL_DATABASE=wilayah MYSQL_USER=wilayah MYSQL_PASSWORD=wilayah bun run src/index.ts
 
       - name: Check for changes
         run: |
