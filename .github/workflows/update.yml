@@ -9,6 +9,22 @@ jobs:
   run-and-commit:
     runs-on: ubuntu-latest
 
+    services:
+      mariadb:
+        image: mariadb:lts
+        env:
+          MYSQL_ROOT_PASSWORD: root_password
+          MYSQL_DATABASE: 'wilayah'
+          MYSQL_USER: 'wilayah'
+          MYSQL_PASSWORD: 'wilayaah'
+        ports:
+          - "3306:3306"
+        options: >
+          --health-cmd="mariadb-admin ping -h localhost"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=3
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -19,9 +35,14 @@ jobs:
           bun-version: latest
 
       - name: Run index.ts with Bun
+        env:
+          MYSQL_ROOT_PASSWORD: root_password
+          MYSQL_DATABASE: 'wilayah'
+          MYSQL_USER: 'wilayah'
+          MYSQL_PASSWORD: 'wilayaah'
         run: |
           bun install
-          bun run index.ts
+          bun run src/index.ts
 
       - name: Check for changes
         run: |
