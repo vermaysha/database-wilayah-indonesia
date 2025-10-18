@@ -46,6 +46,7 @@ jobs:
           DATABASE_URL=mariadb://wilayah:wilayah@localhost:3306/wilayah bun run src/index.ts
 
       - name: Check for changes
+        id: check_changes
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config --global user.name "github-actions[bot]"
@@ -55,6 +56,6 @@ jobs:
           fi
 
       - name: Push changes
-        if: success() && steps.check-for-changes.outputs.changes
+        if: steps.check_changes.outputs.changes_exist == 'true'
         run: |
           git push origin master
