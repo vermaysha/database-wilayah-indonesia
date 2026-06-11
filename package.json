@@ -11,8 +11,5 @@
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
-  "type": "module",
-  "dependencies": {
-    "@fast-csv/format": "^5.0.7"
-  }
+  "type": "module"
 }

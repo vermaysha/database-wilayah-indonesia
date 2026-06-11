@@ -1,138 +1,174 @@
-import { SQL } from "bun";
-import { fetchMaster } from "./utils";
-import { writeCSV } from "./utils/write-csv";
+import { sql } from "bun";
+import { mkdir, rm } from "fs/promises";
+await sql.connect();
 
-interface WilayahResult {
-  kode: string;
-  nama: string;
-}
+type DelimitedOptions = {
+  delimiter?: string;
+  header?: boolean;
+};
 
-interface DataProvinsi {
-  kode_provinsi: string;
-  nama_provinsi: string;
-}
-
-interface DataKabupaten {
-  kode_provinsi: string;
-  kode_kabupaten: string;
-  nama_kabupaten: string;
-}
-
-interface DataKecamatan {
-  kode_provinsi: string;
-  kode_kabupaten: string;
-  kode_kecamatan: string;
-  nama_kecamatan: string;
-}
-
-interface DataKelurahan {
-  kode_provinsi: string;
-  kode_kabupaten: string;
-  kode_kecamatan: string;
-  kode_kelurahan: string;
-  nama_kelurahan: string;
-}
-
-const sql = new SQL({
-  adapter: 'mariadb',
-})
-
-try {
-  await sql.connect();
-} catch (error) {
-  console.error("Failed to connect to the database:", error);
-  process.exit(1);
-}
-
-console.log("Fetching the master SQL file...");
-const masterSql = await fetchMaster();
-if (!masterSql) {
-  console.error("Failed to fetch the master SQL file.");
-  process.exit(1);
-}
-
-console.log('Importing wilayah data from master SQL file...');
-await sql.unsafe(masterSql);
-
-console.log('Processing wilayah data...');
-const result = await sql<WilayahResult[]>`select * from wilayah`;
-const provinsi: Map<string, DataProvinsi> = new Map();
-const kabupaten: Map<string, DataKabupaten> = new Map();
-const kecamatan: Map<string, DataKecamatan> = new Map();
-const kelurahan: Map<string, DataKelurahan> = new Map();
-const total = result.length;
-console.log(`Total records to process: ${total}`);
-
-for (const row of result) {
-  const codes = row.kode.split('.');
-
-  if (codes.length === 1) {
-    provinsi.set(row.kode, {
-      kode_provinsi: codes[0],
-      nama_provinsi: row.nama,
-    });
-  } else if (codes.length === 2) {
-    const kode_provinsi = codes[0];
-    const kode_kabupaten = codes[1];
-    if (!provinsi.has(kode_provinsi)) {
-      console.log(`Provinsi with code ${kode_provinsi} not found for kabupaten ${row.nama}`);
-      continue;
-    }
-    const prov = provinsi.get(kode_provinsi)!;
-
-    kabupaten.set(row.kode, {
-      kode_provinsi: prov.kode_provinsi,
-      kode_kabupaten: kode_kabupaten,
-      nama_kabupaten: row.nama,
-    });
-  } else if (codes.length === 3) {
-    const kode_provinsi = codes[0];
-    const kode_kabupaten = codes[1];
-    const kode_kecamatan = codes[2];
-    if (!kabupaten.has(`${kode_provinsi}.${kode_kabupaten}`)) {
-      console.log(`Kabupaten with code ${kode_provinsi}.${kode_kabupaten} not found for kecamatan ${row.nama}`);
-      continue;
-    }
-    const kab = kabupaten.get(`${kode_provinsi}.${kode_kabupaten}`)!;
-
-    kecamatan.set(row.kode, {
-      kode_provinsi: kab.kode_provinsi,
-      kode_kabupaten: kab.kode_kabupaten,
-      kode_kecamatan: kode_kecamatan,
-      nama_kecamatan: row.nama,
-    });
-  } else if (codes.length === 4) {
-    const kode_provinsi = codes[0];
-    const kode_kabupaten = codes[1];
-    const kode_kecamatan = codes[2];
-    const kode_kelurahan = codes[3];
-    if (!kecamatan.has(`${kode_provinsi}.${kode_kabupaten}.${kode_kecamatan}`)) {
-      console.log(`Kecamatan with code ${kode_provinsi}.${kode_kabupaten}.${kode_kecamatan} not found for kelurahan ${row.nama}`);
-      continue;
-    }
-    const kec = kecamatan.get(`${kode_provinsi}.${kode_kabupaten}.${kode_kecamatan}`)!;
-
-    kelurahan.set(row.kode, {
-      kode_provinsi: kec.kode_provinsi,
-      kode_kabupaten: kec.kode_kabupaten,
-      kode_kecamatan: kec.kode_kecamatan,
-      kode_kelurahan: kode_kelurahan,
-      nama_kelurahan: row.nama,
-    });
+export function objectsToDelimited<T extends Record<string, unknown>>(
+  data: T[],
+  {
+    delimiter = ',',
+    header = true,
+  }: DelimitedOptions = {}
+): string {
+  if (data.length === 0) {
+    return '';
   }
+
+  const columns = Object.keys(data[0]!) as (keyof T)[];
+
+  const escape = (value: unknown): string => {
+    if (value === null || value === undefined) {
+      return '""';
+    }
+
+    const str = String(value);
+
+    return `"${str.replace(/"/g, '""')}"`;
+  };
+
+  const rows: string[] = [];
+
+  if (header) {
+    rows.push(columns.join(delimiter));
+  }
+
+  for (const row of data) {
+    rows.push(
+      columns
+        .map(column => escape(row[column]))
+        .join(delimiter)
+    );
+  }
+
+  return rows.join('\n');
 }
 
-console.log(`Total Provinsi: ${provinsi.size}`);
-console.log(`Total Kabupaten: ${kabupaten.size}`);
-console.log(`Total Kecamatan: ${kecamatan.size}`);
-console.log(`Total Kelurahan: ${kelurahan.size}`);
 
-console.log('Writing data to CSV files...');
-await writeCSV(Array.from(provinsi.values()), 'db/data-provinsi.csv');
-await writeCSV(Array.from(kabupaten.values()), 'db/data-kabupaten.csv');
-await writeCSV(Array.from(kecamatan.values()), 'db/data-kecamatan.csv');
-await writeCSV(Array.from(kelurahan.values()), 'db/data-kelurahan.csv');
+const wilayahSource = 'https://raw.githubusercontent.com/cahyadsn/wilayah/refs/heads/master/db/wilayah.sql';
+const kodeposSource = 'https://raw.githubusercontent.com/cahyadsn/wilayah_kodepos/refs/heads/main/db/wilayah_kodepos.sql';
 
-console.log("Connected to the database successfully.");
+const wilayahResponse = await fetch(wilayahSource).then(res => res.text());
+const kodeposResponse = await fetch(kodeposSource).then(res => res.text());
 
-sql.close();
+await sql.unsafe(wilayahResponse);
+await sql.unsafe(kodeposResponse);
+
+const provinceLists = await sql<{ kode: string, nama: string }[]>`SELECT * FROM wilayah WHERE LENGTH(kode) - LENGTH(REPLACE(kode, '.', '')) + 1 = 1;`;
+const regencyLists = (await sql<{ kode: string, nama: string }[]>`SELECT * FROM wilayah WHERE LENGTH(kode) - LENGTH(REPLACE(kode, '.', '')) + 1 = 2;`)
+const districtLists = await sql<{ kode: string, nama: string }[]>`SELECT * FROM wilayah WHERE LENGTH(kode) - LENGTH(REPLACE(kode, '.', '')) + 1 = 3;`;
+const villageLists = await sql<{ kode: string, nama: string, kodepos: string }[]>`SELECT
+  w.*,
+  wk.*
+FROM wilayah w
+INNER JOIN wilayah_kodepos wk
+    ON wk.kode = w.kode
+WHERE LENGTH(w.kode) - LENGTH(REPLACE(w.kode, '.', '')) + 1 = 4;`;
+
+const provinceData = provinceLists.map((province) => ({
+  province_id: province.kode,
+  province_name: province.nama,
+}));
+
+const regencyData = regencyLists.map((regency) => {
+  const [province_id, regency_id] = regency.kode.split('.');
+
+  return {
+    regency_id: `${province_id}${regency_id}`,
+    province_id,
+    regency_name: regency.nama,
+  }
+});
+
+const districtData = districtLists.map((district) => {
+  const [province_id, regency_id, district_id] = district.kode.split('.');
+
+  return {
+    district_id: `${province_id}${regency_id}${district_id}`,
+    province_id,
+    regency_id: `${province_id}${regency_id}`,
+    district_name: district.nama,
+  }
+});
+
+const villageData = villageLists.map((village) => {
+  const [province_id, regency_id, district_id, village_id] = village.kode.split('.');
+
+  return {
+    village_id: `${province_id}${regency_id}${district_id}${village_id}`,
+    province_id,
+    regency_id: `${province_id}${regency_id}`,
+    district_id: `${province_id}${regency_id}${district_id}`,
+    village_name: village.nama,
+    postal_code: village.kodepos,
+  }
+});
+
+await rm('db', { recursive: true, force: true });
+
+await mkdir('db/json', { recursive: true });
+await mkdir('db/csv', { recursive: true });
+await mkdir('db/tsv', { recursive: true });
+
+Bun.file('db/json/01province.json').write(JSON.stringify(provinceData, null, 2));
+Bun.file('db/json/02regency.json').write(JSON.stringify(regencyData, null, 2));
+Bun.file('db/json/03district.json').write(JSON.stringify(districtData, null, 2));
+Bun.file('db/json/04village.json').write(JSON.stringify(villageData, null, 2));
+
+Bun.file('db/csv/01province.csv').write(objectsToDelimited(provinceData, { delimiter: ',' }));
+Bun.file('db/csv/02regency.csv').write(objectsToDelimited(regencyData, { delimiter: ',' }));
+Bun.file('db/csv/03district.csv').write(objectsToDelimited(districtData, { delimiter: ',' }));
+Bun.file('db/csv/04village.csv').write(objectsToDelimited(villageData, { delimiter: ',' }));
+
+Bun.file('db/tsv/01province.tsv').write(objectsToDelimited(provinceData, { delimiter: '\t' }));
+Bun.file('db/tsv/02regency.tsv').write(objectsToDelimited(regencyData, { delimiter: '\t' }));
+Bun.file('db/tsv/03district.tsv').write(objectsToDelimited(districtData, { delimiter: '\t' }));
+Bun.file('db/tsv/04village.tsv').write(objectsToDelimited(villageData, { delimiter: '\t' }));
+
+
+const normalizedProvinceData = provinceLists.map((province) => {
+  const [province_id] = province.kode.split('.');
+  return {
+    kode_provinsi: province_id,
+    nama_provinsi: province.nama,
+  };
+});
+
+const normalizedRegencyData = regencyLists.map((regency) => {
+  const [province_id, regency_id] = regency.kode.split('.');
+  return {
+    kode_kabupaten: `${regency_id}`,
+    kode_provinsi: province_id,
+    nama_kabupaten: regency.nama,
+  };
+});
+
+const normalizedDistrictData = districtLists.map((district) => {
+  const [province_id, regency_id, district_id] = district.kode.split('.');
+  return {
+    kode_kecamatan: `${district_id}`,
+    kode_provinsi: province_id,
+    kode_kabupaten: `${regency_id}`,
+    nama_kecamatan: district.nama,
+  };
+});
+
+const normalizedVillageData = villageLists.map((village) => {
+  const [province_id, regency_id, district_id, village_id] = village.kode.split('.');
+  return {
+    kode_desa: `${village_id}`,
+    kode_provinsi: province_id,
+    kode_kabupaten: `${regency_id}`,
+    kode_kecamatan: `${district_id}`,
+    nama_kelurahan: village.nama,
+    kode_pos: village.kodepos,
+  };
+});
+
+Bun.file('db/data-provinsi.csv').write(objectsToDelimited(normalizedProvinceData, { delimiter: ',' }));
+Bun.file('db/data-kabupaten.csv').write(objectsToDelimited(normalizedRegencyData, { delimiter: ',' }));
+Bun.file('db/data-kecamatan.csv').write(objectsToDelimited(normalizedDistrictData, { delimiter: ',' }));
+Bun.file('db/data-kelurahan.csv').write(objectsToDelimited(normalizedVillageData, { delimiter: ',' }));
