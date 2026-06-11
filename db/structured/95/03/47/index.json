@@ -1,54 +1,6 @@
 [
   {
     "kode_desa": "2001",
-    "kode_provinsi": "32",
-    "kode_kabupaten": "02",
-    "kode_kecamatan": "47",
-    "nama_kelurahan": "Ciambar",
-    "kode_pos": "43356"
-  },
-  {
-    "kode_desa": "2002",
-    "kode_provinsi": "32",
-    "kode_kabupaten": "02",
-    "kode_kecamatan": "47",
-    "nama_kelurahan": "Ginanjar",
-    "kode_pos": "43356"
-  },
-  {
-    "kode_desa": "2003",
-    "kode_provinsi": "32",
-    "kode_kabupaten": "02",
-    "kode_kecamatan": "47",
-    "nama_kelurahan": "Wangunjaya",
-    "kode_pos": "43356"
-  },
-  {
-    "kode_desa": "2004",
-    "kode_provinsi": "32",
-    "kode_kabupaten": "02",
-    "kode_kecamatan": "47",
-    "nama_kelurahan": "Munjul",
-    "kode_pos": "43356"
-  },
-  {
-    "kode_desa": "2005",
-    "kode_provinsi": "32",
-    "kode_kabupaten": "02",
-    "kode_kecamatan": "47",
-    "nama_kelurahan": "Ambarjaya",
-    "kode_pos": "43356"
-  },
-  {
-    "kode_desa": "2006",
-    "kode_provinsi": "32",
-    "kode_kabupaten": "02",
-    "kode_kecamatan": "47",
-    "nama_kelurahan": "Cibunarjaya",
-    "kode_pos": "43356"
-  },
-  {
-    "kode_desa": "2001",
     "kode_provinsi": "95",
     "kode_kabupaten": "03",
     "kode_kecamatan": "47",

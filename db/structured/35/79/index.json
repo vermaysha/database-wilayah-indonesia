@@ -1,30 +1,6 @@
 [
   {
     "kode_kecamatan": "01",
-    "kode_provinsi": "32",
-    "kode_kabupaten": "79",
-    "nama_kecamatan": "Banjar"
-  },
-  {
-    "kode_kecamatan": "02",
-    "kode_provinsi": "32",
-    "kode_kabupaten": "79",
-    "nama_kecamatan": "Pataruman"
-  },
-  {
-    "kode_kecamatan": "03",
-    "kode_provinsi": "32",
-    "kode_kabupaten": "79",
-    "nama_kecamatan": "Purwaharja"
-  },
-  {
-    "kode_kecamatan": "04",
-    "kode_provinsi": "32",
-    "kode_kabupaten": "79",
-    "nama_kecamatan": "Langensari"
-  },
-  {
-    "kode_kecamatan": "01",
     "kode_provinsi": "35",
     "kode_kabupaten": "79",
     "nama_kecamatan": "Batu"
