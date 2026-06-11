@@ -200,3 +200,7 @@ for (const district of normalizedDistrictData) {
   );
   await writeStructured(`db/structured/${district.kode_provinsi}/${district.kode_kabupaten}/${district.kode_kecamatan}/index.json`, villages);
 }
+
+for (const village of normalizedVillageData) {
+  await writeStructured(`db/structured/${village.kode_provinsi}/${village.kode_kabupaten}/${village.kode_kecamatan}/${village.kode_desa}/index.json`, [village]);
+}
