@@ -185,11 +185,18 @@ for (const province of normalizedProvinceData) {
 }
 
 for (const regency of normalizedRegencyData) {
-  const districts = normalizedDistrictData.filter(district => district.kode_kabupaten === regency.kode_kabupaten);
+  const districts = normalizedDistrictData.filter(district =>
+    district.kode_provinsi === regency.kode_provinsi &&
+    district.kode_kabupaten === regency.kode_kabupaten
+  );
   await writeStructured(`db/structured/${regency.kode_provinsi}/${regency.kode_kabupaten}/index.json`, districts);
 }
 
 for (const district of normalizedDistrictData) {
-  const villages = normalizedVillageData.filter(village => village.kode_kecamatan === district.kode_kecamatan);
+  const villages = normalizedVillageData.filter(village =>
+    village.kode_provinsi === district.kode_provinsi &&
+    village.kode_kabupaten === district.kode_kabupaten &&
+    village.kode_kecamatan === district.kode_kecamatan
+  );
   await writeStructured(`db/structured/${district.kode_provinsi}/${district.kode_kabupaten}/${district.kode_kecamatan}/index.json`, villages);
 }
