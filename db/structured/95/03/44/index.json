@@ -1,0 +1,242 @@
+[
+  {
+    "kode_desa": "2001",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "02",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Padasenang",
+    "kode_pos": "43183"
+  },
+  {
+    "kode_desa": "2002",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "02",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Cidadap",
+    "kode_pos": "43183"
+  },
+  {
+    "kode_desa": "2003",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "02",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Banjarsari",
+    "kode_pos": "43183"
+  },
+  {
+    "kode_desa": "2004",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "02",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Hegarmulya",
+    "kode_pos": "43183"
+  },
+  {
+    "kode_desa": "2005",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "02",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Tenjolaut",
+    "kode_pos": "43183"
+  },
+  {
+    "kode_desa": "2006",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "02",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Mekartani",
+    "kode_pos": "43183"
+  },
+  {
+    "kode_desa": "2001",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Cangkuang",
+    "kode_pos": "40238"
+  },
+  {
+    "kode_desa": "2002",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Ciluncat",
+    "kode_pos": "40238"
+  },
+  {
+    "kode_desa": "2003",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Nagrak",
+    "kode_pos": "40238"
+  },
+  {
+    "kode_desa": "2004",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Bandasari",
+    "kode_pos": "40238"
+  },
+  {
+    "kode_desa": "2005",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Pananjung",
+    "kode_pos": "40238"
+  },
+  {
+    "kode_desa": "2006",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Jatisari",
+    "kode_pos": "40238"
+  },
+  {
+    "kode_desa": "2007",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Tanjungsari",
+    "kode_pos": "40238"
+  },
+  {
+    "kode_desa": "2001",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Kabianggama",
+    "kode_pos": "99734"
+  },
+  {
+    "kode_desa": "2002",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Sohobma",
+    "kode_pos": "99734"
+  },
+  {
+    "kode_desa": "2003",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Sohal",
+    "kode_pos": "99734"
+  },
+  {
+    "kode_desa": "2004",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Bahabolma",
+    "kode_pos": "99734"
+  },
+  {
+    "kode_desa": "2005",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Subayo",
+    "kode_pos": "99734"
+  },
+  {
+    "kode_desa": "2006",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Buahun",
+    "kode_pos": "99734"
+  },
+  {
+    "kode_desa": "2007",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Domul",
+    "kode_pos": "99734"
+  },
+  {
+    "kode_desa": "2001",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Wiyaluk",
+    "kode_pos": "99031"
+  },
+  {
+    "kode_desa": "2002",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Aburage",
+    "kode_pos": "99031"
+  },
+  {
+    "kode_desa": "2003",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Kogoyapura",
+    "kode_pos": "99031"
+  },
+  {
+    "kode_desa": "2004",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Erimbur",
+    "kode_pos": "99031"
+  },
+  {
+    "kode_desa": "2005",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Leragawi/Megagirakusk",
+    "kode_pos": "99031"
+  },
+  {
+    "kode_desa": "2006",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Longgoboma",
+    "kode_pos": "99031"
+  },
+  {
+    "kode_desa": "2007",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Tingwi",
+    "kode_pos": "99031"
+  },
+  {
+    "kode_desa": "2008",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Gubura",
+    "kode_pos": "99031"
+  },
+  {
+    "kode_desa": "2009",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Lubuk",
+    "kode_pos": "99031"
+  },
+  {
+    "kode_desa": "2010",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "04",
+    "kode_kecamatan": "44",
+    "nama_kelurahan": "Bogome",
+    "kode_pos": "99031"
+  }
+]

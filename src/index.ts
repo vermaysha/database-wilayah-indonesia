@@ -128,7 +128,6 @@ Bun.file('db/tsv/02regency.tsv').write(objectsToDelimited(regencyData, { delimit
 Bun.file('db/tsv/03district.tsv').write(objectsToDelimited(districtData, { delimiter: '\t' }));
 Bun.file('db/tsv/04village.tsv').write(objectsToDelimited(villageData, { delimiter: '\t' }));
 
-
 const normalizedProvinceData = provinceLists.map((province) => {
   const [province_id] = province.kode.split('.');
   return {
@@ -172,3 +171,25 @@ Bun.file('db/data-provinsi.csv').write(objectsToDelimited(normalizedProvinceData
 Bun.file('db/data-kabupaten.csv').write(objectsToDelimited(normalizedRegencyData, { delimiter: ',' }));
 Bun.file('db/data-kecamatan.csv').write(objectsToDelimited(normalizedDistrictData, { delimiter: ',' }));
 Bun.file('db/data-kelurahan.csv').write(objectsToDelimited(normalizedVillageData, { delimiter: ',' }));
+
+const writeStructured = async (path: string, data: Record<string, unknown>[]) => {
+  await mkdir(path.substring(0, path.lastIndexOf('/')), { recursive: true });
+  await Bun.file(path).write(JSON.stringify(data, null, 2));
+};
+
+await writeStructured('db/structured/index.json', normalizedProvinceData);
+
+for (const province of normalizedProvinceData) {
+  const regencies = normalizedRegencyData.filter(regency => regency.kode_provinsi === province.kode_provinsi);
+  await writeStructured(`db/structured/${province.kode_provinsi}/index.json`, regencies);
+}
+
+for (const regency of normalizedRegencyData) {
+  const districts = normalizedDistrictData.filter(district => district.kode_kabupaten === regency.kode_kabupaten);
+  await writeStructured(`db/structured/${regency.kode_provinsi}/${regency.kode_kabupaten}/index.json`, districts);
+}
+
+for (const district of normalizedDistrictData) {
+  const villages = normalizedVillageData.filter(village => village.kode_kecamatan === district.kode_kecamatan);
+  await writeStructured(`db/structured/${district.kode_provinsi}/${district.kode_kabupaten}/${district.kode_kecamatan}/index.json`, villages);
+}

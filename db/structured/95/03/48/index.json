@@ -1,0 +1,50 @@
+[
+  {
+    "kode_desa": "2001",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "48",
+    "nama_kelurahan": "Duram",
+    "kode_pos": "99753"
+  },
+  {
+    "kode_desa": "2002",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "48",
+    "nama_kelurahan": "Yeminikma",
+    "kode_pos": "99753"
+  },
+  {
+    "kode_desa": "2003",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "48",
+    "nama_kelurahan": "Goak",
+    "kode_pos": "99753"
+  },
+  {
+    "kode_desa": "2004",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "48",
+    "nama_kelurahan": "Digitme",
+    "kode_pos": "99753"
+  },
+  {
+    "kode_desa": "2005",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "48",
+    "nama_kelurahan": "Dengat",
+    "kode_pos": "99753"
+  },
+  {
+    "kode_desa": "2006",
+    "kode_provinsi": "95",
+    "kode_kabupaten": "03",
+    "kode_kecamatan": "48",
+    "nama_kelurahan": "Niniwi",
+    "kode_pos": "99753"
+  }
+]

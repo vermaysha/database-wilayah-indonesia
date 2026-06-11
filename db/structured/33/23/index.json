@@ -1,0 +1,290 @@
+[
+  {
+    "kode_kecamatan": "01",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Kualuh Hulu"
+  },
+  {
+    "kode_kecamatan": "02",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Kualuh Leidong"
+  },
+  {
+    "kode_kecamatan": "03",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Kualuh Hilir"
+  },
+  {
+    "kode_kecamatan": "04",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Aek Kuo"
+  },
+  {
+    "kode_kecamatan": "05",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Marbau"
+  },
+  {
+    "kode_kecamatan": "06",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Na IX-X"
+  },
+  {
+    "kode_kecamatan": "07",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Aek Natas"
+  },
+  {
+    "kode_kecamatan": "08",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Kualuh Selatan"
+  },
+  {
+    "kode_kecamatan": "01",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Bulu"
+  },
+  {
+    "kode_kecamatan": "02",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Tembarak"
+  },
+  {
+    "kode_kecamatan": "03",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Temanggung"
+  },
+  {
+    "kode_kecamatan": "04",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Pringsurat"
+  },
+  {
+    "kode_kecamatan": "05",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Kaloran"
+  },
+  {
+    "kode_kecamatan": "06",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Kandangan"
+  },
+  {
+    "kode_kecamatan": "07",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Kedu"
+  },
+  {
+    "kode_kecamatan": "08",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Parakan"
+  },
+  {
+    "kode_kecamatan": "09",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Ngadirejo"
+  },
+  {
+    "kode_kecamatan": "10",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Jumo"
+  },
+  {
+    "kode_kecamatan": "11",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Tretep"
+  },
+  {
+    "kode_kecamatan": "12",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Candiroto"
+  },
+  {
+    "kode_kecamatan": "13",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Kranggan"
+  },
+  {
+    "kode_kecamatan": "14",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Tlogomulyo"
+  },
+  {
+    "kode_kecamatan": "15",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Selopampang"
+  },
+  {
+    "kode_kecamatan": "16",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Bansari"
+  },
+  {
+    "kode_kecamatan": "17",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Kledung"
+  },
+  {
+    "kode_kecamatan": "18",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Bejen"
+  },
+  {
+    "kode_kecamatan": "19",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Wonoboyo"
+  },
+  {
+    "kode_kecamatan": "20",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Gemawang"
+  },
+  {
+    "kode_kecamatan": "01",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Kenduruan"
+  },
+  {
+    "kode_kecamatan": "02",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Jatirogo"
+  },
+  {
+    "kode_kecamatan": "03",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Bangilan"
+  },
+  {
+    "kode_kecamatan": "04",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Bancar"
+  },
+  {
+    "kode_kecamatan": "05",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Senori"
+  },
+  {
+    "kode_kecamatan": "06",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Tambakboyo"
+  },
+  {
+    "kode_kecamatan": "07",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Singgahan"
+  },
+  {
+    "kode_kecamatan": "08",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Kerek"
+  },
+  {
+    "kode_kecamatan": "09",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Parengan"
+  },
+  {
+    "kode_kecamatan": "10",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Montong"
+  },
+  {
+    "kode_kecamatan": "11",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Soko"
+  },
+  {
+    "kode_kecamatan": "12",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Jenu"
+  },
+  {
+    "kode_kecamatan": "13",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Merakurak"
+  },
+  {
+    "kode_kecamatan": "14",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Rengel"
+  },
+  {
+    "kode_kecamatan": "15",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Semanding"
+  },
+  {
+    "kode_kecamatan": "16",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Tuban"
+  },
+  {
+    "kode_kecamatan": "17",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Plumpang"
+  },
+  {
+    "kode_kecamatan": "18",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Palang"
+  },
+  {
+    "kode_kecamatan": "19",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Widang"
+  },
+  {
+    "kode_kecamatan": "20",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "23",
+    "nama_kecamatan": "Grabagan"
+  }
+]

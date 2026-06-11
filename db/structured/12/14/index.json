@@ -1,0 +1,806 @@
+[
+  {
+    "kode_kecamatan": "01",
+    "kode_provinsi": "11",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Teunom"
+  },
+  {
+    "kode_kecamatan": "02",
+    "kode_provinsi": "11",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Krueng Sabee"
+  },
+  {
+    "kode_kecamatan": "03",
+    "kode_provinsi": "11",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Setia Bakti"
+  },
+  {
+    "kode_kecamatan": "04",
+    "kode_provinsi": "11",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sampoi Niet"
+  },
+  {
+    "kode_kecamatan": "05",
+    "kode_provinsi": "11",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Jaya"
+  },
+  {
+    "kode_kecamatan": "06",
+    "kode_provinsi": "11",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Panga"
+  },
+  {
+    "kode_kecamatan": "07",
+    "kode_provinsi": "11",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Indra Jaya"
+  },
+  {
+    "kode_kecamatan": "08",
+    "kode_provinsi": "11",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Darul Hikmah"
+  },
+  {
+    "kode_kecamatan": "09",
+    "kode_provinsi": "11",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pasie Raya"
+  },
+  {
+    "kode_kecamatan": "01",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Lolomatua"
+  },
+  {
+    "kode_kecamatan": "02",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Gomo"
+  },
+  {
+    "kode_kecamatan": "03",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Lahusa"
+  },
+  {
+    "kode_kecamatan": "04",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Hibala"
+  },
+  {
+    "kode_kecamatan": "05",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pulau-Pulau Batu"
+  },
+  {
+    "kode_kecamatan": "06",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Teluk Dalam"
+  },
+  {
+    "kode_kecamatan": "07",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Amandraya"
+  },
+  {
+    "kode_kecamatan": "08",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Lolowau"
+  },
+  {
+    "kode_kecamatan": "09",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Susua"
+  },
+  {
+    "kode_kecamatan": "10",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Maniamolo"
+  },
+  {
+    "kode_kecamatan": "11",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Hilimegai"
+  },
+  {
+    "kode_kecamatan": "12",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Toma"
+  },
+  {
+    "kode_kecamatan": "13",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Mazino"
+  },
+  {
+    "kode_kecamatan": "14",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Umbunasi"
+  },
+  {
+    "kode_kecamatan": "15",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Aramo"
+  },
+  {
+    "kode_kecamatan": "16",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pulau-Pulau Batu Timur"
+  },
+  {
+    "kode_kecamatan": "17",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Mazo"
+  },
+  {
+    "kode_kecamatan": "18",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Fanayama"
+  },
+  {
+    "kode_kecamatan": "19",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Ulunoyo"
+  },
+  {
+    "kode_kecamatan": "20",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Huruna"
+  },
+  {
+    "kode_kecamatan": "21",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "O'o'u"
+  },
+  {
+    "kode_kecamatan": "22",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Onohazumba"
+  },
+  {
+    "kode_kecamatan": "23",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Hilisalawa'ahe"
+  },
+  {
+    "kode_kecamatan": "24",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Ulususua"
+  },
+  {
+    "kode_kecamatan": "25",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sidua'ori"
+  },
+  {
+    "kode_kecamatan": "26",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Somambawa"
+  },
+  {
+    "kode_kecamatan": "27",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Boronadu"
+  },
+  {
+    "kode_kecamatan": "28",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Simuk"
+  },
+  {
+    "kode_kecamatan": "29",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pulau-Pulau Batu Barat"
+  },
+  {
+    "kode_kecamatan": "30",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pulau-Pulau Batu Utara"
+  },
+  {
+    "kode_kecamatan": "31",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Tanah Masa"
+  },
+  {
+    "kode_kecamatan": "32",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Luahagundre Maniamolo"
+  },
+  {
+    "kode_kecamatan": "33",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Onolalu"
+  },
+  {
+    "kode_kecamatan": "34",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Ulu Idanotae"
+  },
+  {
+    "kode_kecamatan": "35",
+    "kode_provinsi": "12",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Idanotae"
+  },
+  {
+    "kode_kecamatan": "01",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Purwakarta"
+  },
+  {
+    "kode_kecamatan": "02",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Campaka"
+  },
+  {
+    "kode_kecamatan": "03",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Jatiluhur"
+  },
+  {
+    "kode_kecamatan": "04",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Plered"
+  },
+  {
+    "kode_kecamatan": "05",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sukatani"
+  },
+  {
+    "kode_kecamatan": "06",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Darangdan"
+  },
+  {
+    "kode_kecamatan": "07",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Maniis"
+  },
+  {
+    "kode_kecamatan": "08",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Tegalwaru"
+  },
+  {
+    "kode_kecamatan": "09",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Wanayasa"
+  },
+  {
+    "kode_kecamatan": "10",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pasawahan"
+  },
+  {
+    "kode_kecamatan": "11",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Bojong"
+  },
+  {
+    "kode_kecamatan": "12",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Babakancikao"
+  },
+  {
+    "kode_kecamatan": "13",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Bungursari"
+  },
+  {
+    "kode_kecamatan": "14",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Cibatu"
+  },
+  {
+    "kode_kecamatan": "15",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sukasari"
+  },
+  {
+    "kode_kecamatan": "16",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pondoksalam"
+  },
+  {
+    "kode_kecamatan": "17",
+    "kode_provinsi": "32",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Kiarapedes"
+  },
+  {
+    "kode_kecamatan": "01",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Kalijambe"
+  },
+  {
+    "kode_kecamatan": "02",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Plupuh"
+  },
+  {
+    "kode_kecamatan": "03",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Masaran"
+  },
+  {
+    "kode_kecamatan": "04",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Kedawung"
+  },
+  {
+    "kode_kecamatan": "05",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sambirejo"
+  },
+  {
+    "kode_kecamatan": "06",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Gondang"
+  },
+  {
+    "kode_kecamatan": "07",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sambungmacan"
+  },
+  {
+    "kode_kecamatan": "08",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Ngrampal"
+  },
+  {
+    "kode_kecamatan": "09",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Karangmalang"
+  },
+  {
+    "kode_kecamatan": "10",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sragen"
+  },
+  {
+    "kode_kecamatan": "11",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sidoharjo"
+  },
+  {
+    "kode_kecamatan": "12",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Tanon"
+  },
+  {
+    "kode_kecamatan": "13",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Gemolong"
+  },
+  {
+    "kode_kecamatan": "14",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Miri"
+  },
+  {
+    "kode_kecamatan": "15",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sumberlawang"
+  },
+  {
+    "kode_kecamatan": "16",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Mondokan"
+  },
+  {
+    "kode_kecamatan": "17",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sukodono"
+  },
+  {
+    "kode_kecamatan": "18",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Gesi"
+  },
+  {
+    "kode_kecamatan": "19",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Tangen"
+  },
+  {
+    "kode_kecamatan": "20",
+    "kode_provinsi": "33",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Jenar"
+  },
+  {
+    "kode_kecamatan": "01",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Purwodadi"
+  },
+  {
+    "kode_kecamatan": "02",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Tutur"
+  },
+  {
+    "kode_kecamatan": "03",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Puspo"
+  },
+  {
+    "kode_kecamatan": "04",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Lumbang"
+  },
+  {
+    "kode_kecamatan": "05",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pasrepan"
+  },
+  {
+    "kode_kecamatan": "06",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Kejayan"
+  },
+  {
+    "kode_kecamatan": "07",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Wonorejo"
+  },
+  {
+    "kode_kecamatan": "08",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Purwosari"
+  },
+  {
+    "kode_kecamatan": "09",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sukorejo"
+  },
+  {
+    "kode_kecamatan": "10",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Prigen"
+  },
+  {
+    "kode_kecamatan": "11",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pandaan"
+  },
+  {
+    "kode_kecamatan": "12",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Gempol"
+  },
+  {
+    "kode_kecamatan": "13",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Beji"
+  },
+  {
+    "kode_kecamatan": "14",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Bangil"
+  },
+  {
+    "kode_kecamatan": "15",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Rembang"
+  },
+  {
+    "kode_kecamatan": "16",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Kraton"
+  },
+  {
+    "kode_kecamatan": "17",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pohjentrek"
+  },
+  {
+    "kode_kecamatan": "18",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Gondangwetan"
+  },
+  {
+    "kode_kecamatan": "19",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Winongan"
+  },
+  {
+    "kode_kecamatan": "20",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Grati"
+  },
+  {
+    "kode_kecamatan": "21",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Nguling"
+  },
+  {
+    "kode_kecamatan": "22",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Lekok"
+  },
+  {
+    "kode_kecamatan": "23",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Rejoso"
+  },
+  {
+    "kode_kecamatan": "24",
+    "kode_provinsi": "35",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Tosari"
+  },
+  {
+    "kode_kecamatan": "01",
+    "kode_provinsi": "53",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Rote Barat Daya"
+  },
+  {
+    "kode_kecamatan": "02",
+    "kode_provinsi": "53",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Rote Barat Laut"
+  },
+  {
+    "kode_kecamatan": "03",
+    "kode_provinsi": "53",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Lobalain"
+  },
+  {
+    "kode_kecamatan": "04",
+    "kode_provinsi": "53",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Rote Tengah"
+  },
+  {
+    "kode_kecamatan": "05",
+    "kode_provinsi": "53",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pantai Baru"
+  },
+  {
+    "kode_kecamatan": "06",
+    "kode_provinsi": "53",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Rote Timur"
+  },
+  {
+    "kode_kecamatan": "07",
+    "kode_provinsi": "53",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Rote Barat"
+  },
+  {
+    "kode_kecamatan": "08",
+    "kode_provinsi": "53",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Rote Selatan"
+  },
+  {
+    "kode_kecamatan": "09",
+    "kode_provinsi": "53",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Ndao Nuse"
+  },
+  {
+    "kode_kecamatan": "10",
+    "kode_provinsi": "53",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Landu Leko"
+  },
+  {
+    "kode_kecamatan": "11",
+    "kode_provinsi": "53",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Loaholu"
+  },
+  {
+    "kode_kecamatan": "01",
+    "kode_provinsi": "73",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Panca Lautang"
+  },
+  {
+    "kode_kecamatan": "02",
+    "kode_provinsi": "73",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Tellu Limpoe"
+  },
+  {
+    "kode_kecamatan": "03",
+    "kode_provinsi": "73",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Watang Pulu"
+  },
+  {
+    "kode_kecamatan": "04",
+    "kode_provinsi": "73",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Baranti"
+  },
+  {
+    "kode_kecamatan": "05",
+    "kode_provinsi": "73",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Panca Rijang"
+  },
+  {
+    "kode_kecamatan": "06",
+    "kode_provinsi": "73",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Kulo"
+  },
+  {
+    "kode_kecamatan": "07",
+    "kode_provinsi": "73",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Maritengngae"
+  },
+  {
+    "kode_kecamatan": "08",
+    "kode_provinsi": "73",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Watang Sidenreng"
+  },
+  {
+    "kode_kecamatan": "09",
+    "kode_provinsi": "73",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Dua Pitue"
+  },
+  {
+    "kode_kecamatan": "10",
+    "kode_provinsi": "73",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pitu Riawa"
+  },
+  {
+    "kode_kecamatan": "11",
+    "kode_provinsi": "73",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Pitu Riase"
+  },
+  {
+    "kode_kecamatan": "01",
+    "kode_provinsi": "74",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Lakudo"
+  },
+  {
+    "kode_kecamatan": "02",
+    "kode_provinsi": "74",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Mawasangka Timur"
+  },
+  {
+    "kode_kecamatan": "03",
+    "kode_provinsi": "74",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Mawasangka Tengah"
+  },
+  {
+    "kode_kecamatan": "04",
+    "kode_provinsi": "74",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Mawasangka"
+  },
+  {
+    "kode_kecamatan": "05",
+    "kode_provinsi": "74",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Talaga Raya"
+  },
+  {
+    "kode_kecamatan": "06",
+    "kode_provinsi": "74",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Gu"
+  },
+  {
+    "kode_kecamatan": "07",
+    "kode_provinsi": "74",
+    "kode_kabupaten": "14",
+    "nama_kecamatan": "Sangia Wambulu"
+  }
+]

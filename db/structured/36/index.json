@@ -1,0 +1,42 @@
+[
+  {
+    "kode_kabupaten": "01",
+    "kode_provinsi": "36",
+    "nama_kabupaten": "Kabupaten Pandeglang"
+  },
+  {
+    "kode_kabupaten": "02",
+    "kode_provinsi": "36",
+    "nama_kabupaten": "Kabupaten Lebak"
+  },
+  {
+    "kode_kabupaten": "03",
+    "kode_provinsi": "36",
+    "nama_kabupaten": "Kabupaten Tangerang"
+  },
+  {
+    "kode_kabupaten": "04",
+    "kode_provinsi": "36",
+    "nama_kabupaten": "Kabupaten Serang"
+  },
+  {
+    "kode_kabupaten": "71",
+    "kode_provinsi": "36",
+    "nama_kabupaten": "Kota Tangerang"
+  },
+  {
+    "kode_kabupaten": "72",
+    "kode_provinsi": "36",
+    "nama_kabupaten": "Kota Cilegon"
+  },
+  {
+    "kode_kabupaten": "73",
+    "kode_provinsi": "36",
+    "nama_kabupaten": "Kota Serang"
+  },
+  {
+    "kode_kabupaten": "74",
+    "kode_provinsi": "36",
+    "nama_kabupaten": "Kota Tangerang Selatan"
+  }
+]

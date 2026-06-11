@@ -1,0 +1,32 @@
+[
+  {
+    "kode_kabupaten": "01",
+    "kode_provinsi": "31",
+    "nama_kabupaten": "Kabupaten Administrasi Kepulauan Seribu"
+  },
+  {
+    "kode_kabupaten": "71",
+    "kode_provinsi": "31",
+    "nama_kabupaten": "Kota Administrasi Jakarta Pusat"
+  },
+  {
+    "kode_kabupaten": "72",
+    "kode_provinsi": "31",
+    "nama_kabupaten": "Kota Administrasi Jakarta Utara "
+  },
+  {
+    "kode_kabupaten": "73",
+    "kode_provinsi": "31",
+    "nama_kabupaten": "Kota Administrasi Jakarta Barat"
+  },
+  {
+    "kode_kabupaten": "74",
+    "kode_provinsi": "31",
+    "nama_kabupaten": "Kota Administrasi Jakarta Selatan"
+  },
+  {
+    "kode_kabupaten": "75",
+    "kode_provinsi": "31",
+    "nama_kabupaten": "Kota Administrasi Jakarta Timur"
+  }
+]

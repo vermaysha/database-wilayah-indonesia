@@ -1,0 +1,57 @@
+[
+  {
+    "kode_kabupaten": "01",
+    "kode_provinsi": "15",
+    "nama_kabupaten": "Kabupaten Kerinci"
+  },
+  {
+    "kode_kabupaten": "02",
+    "kode_provinsi": "15",
+    "nama_kabupaten": "Kabupaten Merangin"
+  },
+  {
+    "kode_kabupaten": "03",
+    "kode_provinsi": "15",
+    "nama_kabupaten": "Kabupaten Sarolangun"
+  },
+  {
+    "kode_kabupaten": "04",
+    "kode_provinsi": "15",
+    "nama_kabupaten": "Kabupaten Batanghari"
+  },
+  {
+    "kode_kabupaten": "05",
+    "kode_provinsi": "15",
+    "nama_kabupaten": "Kabupaten Muaro Jambi"
+  },
+  {
+    "kode_kabupaten": "06",
+    "kode_provinsi": "15",
+    "nama_kabupaten": "Kabupaten Tanjung Jabung Barat"
+  },
+  {
+    "kode_kabupaten": "07",
+    "kode_provinsi": "15",
+    "nama_kabupaten": "Kabupaten Tanjung Jabung Timur"
+  },
+  {
+    "kode_kabupaten": "08",
+    "kode_provinsi": "15",
+    "nama_kabupaten": "Kabupaten Bungo"
+  },
+  {
+    "kode_kabupaten": "09",
+    "kode_provinsi": "15",
+    "nama_kabupaten": "Kabupaten Tebo"
+  },
+  {
+    "kode_kabupaten": "71",
+    "kode_provinsi": "15",
+    "nama_kabupaten": "Kota Jambi"
+  },
+  {
+    "kode_kabupaten": "72",
+    "kode_provinsi": "15",
+    "nama_kabupaten": "Kota Sungai Penuh"
+  }
+]
